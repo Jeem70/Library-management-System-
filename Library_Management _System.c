@@ -19,7 +19,7 @@ void addBook() {
 
     printf("Enter Book ID: ");
     scanf("%d", &b.id);
-    getchar(); // consume newline
+    getchar();
     printf("Enter Book Title: ");
     fgets(b.title, sizeof(b.title), stdin);
     b.title[strcspn(b.title, "\n")] = 0;
